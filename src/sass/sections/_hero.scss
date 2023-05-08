@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   border-bottom: 0px;
-  background: $white-color;
+  background: $dark-grey;
   font-weight: 400;
   color: $dark-blue-text;
   padding: 0rem 5.6rem;
@@ -16,7 +16,7 @@
   z-index: -1;
 
   // Set position sticky so the jumbotron stays fixed while you scroll.
-  // position: sticky;
+  position: sticky;
 
   // If you want to set a background image on the hero section, uncomment these with your custom image
 
