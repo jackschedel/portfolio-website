@@ -20,9 +20,14 @@
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
   }
 }
+.github-icon-stop-1 {
+  stop-color: $primary-color;
+  stop-opacity: 1;
+}
 
-.github-icon-svg {
-  fill: $secondary-color;
+.github-icon-stop-2 {
+  stop-color: $secondary-color;
+  stop-opacity: 1;
 }
 
 /* Hero Style */
