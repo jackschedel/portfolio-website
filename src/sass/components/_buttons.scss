@@ -6,7 +6,7 @@
   font-weight: bold;
   line-height: 1;
   z-index: 1;
-  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
 
   &::after {
     content: "";
@@ -20,18 +20,25 @@
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
   }
 }
+
 .github-icon-stop-1 {
-  stop-color: $primary-color;
+  stop-color: #8091D6;
   stop-opacity: 1;
+  transition-duration: 0.2s;
 }
 
 .github-icon-stop-2 {
-  stop-color: $secondary-color;
+  stop-color: #70B4D8;
   stop-opacity: 1;
+  transition-duration: 0.2s;
+}
+
+.cta-btn--hero:hover stop { 
+  stop-color: $dark-grey;
 }
 
 /* Hero Style */
-.cta-btn--hero {
+.cta-btn--hero { 
   @include supportColorForIE11();
   border-width: 2px;
   border-style: solid;
@@ -55,7 +62,7 @@
   @include supportIE11() {
     color: $secondary-color !important;
     &:hover {
-      color: $white-color !important;
+      color: $gradient-contrast-color !important;
     }
   }
 
@@ -78,7 +85,7 @@
   }
 
   &:hover {
-    -webkit-text-fill-color: $white-color;
+    -webkit-text-fill-color: $gradient-contrast-color;
     text-decoration: none;
 
     @include respond(phone) {
@@ -93,15 +100,15 @@
 
 /* Resume Style */
 .cta-btn--resume {
-  color: $white-color;
-  border: 2px solid $white-color;
+  color: $gradient-contrast-color;
+  border: 2px solid $gradient-contrast-color;
 
   &::after {
-    background: $white-color;
+    background: $gradient-contrast-color;
   }
 
   &:hover {
-    color: $secondary-color;
+    color: $white-color;
     text-decoration: none;
 
     &::after {
