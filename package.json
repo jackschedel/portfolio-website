@@ -5,7 +5,7 @@
   "description": "Jack Schedel's resume",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
+    "start": "parcel build && parcel",
     "build": "parcel build"
   },
   "repository": {
