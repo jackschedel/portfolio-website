@@ -51,6 +51,20 @@ export const targetElements = [
     },
   },
   {
+    element: ".closing-wrapper__text",
+    animation: {
+      delay: 250,
+      origin: window.innerWidth > 768 ? "left" : "bottom",
+    },
+  },
+  {
+    element: ".closing-wrapper__image",
+    animation: {
+      delay: 500,
+      origin: window.innerWidth > 768 ? "right" : "bottom",
+    },
+  },
+  {
     element: ".role-wrapper__text",
     animation: {
       delay: 250,
@@ -69,6 +83,13 @@ export const targetElements = [
     animation: {
       delay: 400,
       origin: "bottom",
+    },
+  },
+  {
+    element: ".closing-wrapper",
+    animation: {
+      delay: 400,
+      origin: window.innerWidth > 768 ? "left" : "bottom",
     },
   },
 ];
