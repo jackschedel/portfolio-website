@@ -51,6 +51,20 @@ export const targetElements = [
     },
   },
   {
+    element: ".role-wrapper__text",
+    animation: {
+      delay: 250,
+      origin: window.innerWidth > 768 ? "left" : "bottom",
+    },
+  },
+  {
+    element: ".role-wrapper__image",
+    animation: {
+      delay: 500,
+      origin: window.innerWidth > 768 ? "right" : "bottom",
+    },
+  },
+  {
     element: ".contact-wrapper",
     animation: {
       delay: 400,
