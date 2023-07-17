@@ -8,8 +8,8 @@
   color: $gradient-contrast-color;
   height: 100%;
   border-top: 0px;
-  -webkit-clip-path: polygon(0 0, 100% 8%, 100% 92%, 0 100%);
-  clip-path: polygon(0 0, 100% 8%, 100% 92%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
+  clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
 
   padding-top: 5rem;
   margin-top: -10rem;
