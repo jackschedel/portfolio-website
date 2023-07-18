@@ -61,6 +61,11 @@
         }
       }
 
+      & h3 > a {
+        color: inherit;
+        font-size: inherit;
+      }
+
       & p > a {
         color: $secondary-color;
       }

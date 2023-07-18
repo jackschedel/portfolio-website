@@ -39,6 +39,10 @@ a:hover {
   color: $white-color !important;
 }
 
+.gradient-contrast-color {
+  color: $gradient-contrast-color !important;
+}
+
 .text-color-main {
   @include supportColorForIE11();
 
