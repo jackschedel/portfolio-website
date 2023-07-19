@@ -45,16 +45,17 @@
 
 .to-about-section i {
   color: $white-color;
-  margin: 1rem 0 $default-font-size;
-
-  position: absolute; /* Position the element relative to the section */
-  bottom: 20px; /* Distance from the bottom of the section */
-  left: 50%; /* Center the element horizontally */
-  
+  margin: 1rem auto $default-font-size;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
   transition: all 0.2s ease-in;
+}
 
+.down-on-hover {
   &:hover {
-    transform: translateY(+4px);
+    margin-bottom: 4px;
   }
 }
 

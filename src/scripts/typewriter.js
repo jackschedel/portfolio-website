@@ -57,6 +57,7 @@ export default function setupTypewriter(t) {
         } else {
           setTimeout(function() {
             document.getElementById("to-bounce").classList.add("bounce");
+            document.getElementById("to-bounce").classList.remove("down-on-hover");
           }, 150);
           setTimeout(function() {
                 window.scroll(0, 40);
