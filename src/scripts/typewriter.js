@@ -54,6 +54,11 @@ export default function setupTypewriter(t) {
         cursorPosition += 1;
         if (cursorPosition < HTML.length - 1) {
             setTimeout(type, tempTypeSpeed);
+        } else {
+          setTimeout(function() {
+                window.scroll(0, 15);
+          }, 500);
+
         }
 
     };
