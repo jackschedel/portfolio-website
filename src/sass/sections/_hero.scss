@@ -58,6 +58,21 @@
   }
 }
 
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.bounce {
+  display: inline-block;
+  animation: bounce 1s infinite ease-in-out;
+}
+
+
 #typewriter{
   font-size: 5.6rem;
   font-weight: 700;

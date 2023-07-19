@@ -56,8 +56,11 @@ export default function setupTypewriter(t) {
             setTimeout(type, tempTypeSpeed);
         } else {
           setTimeout(function() {
-                window.scroll(0, 15);
-          }, 500);
+            document.getElementById("to-bounce").classList.add("bounce");
+          }, 150);
+          setTimeout(function() {
+                window.scroll(0, 40);
+          }, 1000);
 
         }
 
