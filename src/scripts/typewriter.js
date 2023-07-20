@@ -67,7 +67,7 @@ export default function setupTypewriter(t) {
             window.scroll(0, 40);
           }
         }
-      }, 2000);
+      }, 1050);
       window.addEventListener("scroll", function () {
         if (window.scrollY !== 0) {
           clearInterval(scrollTimeout);
