@@ -55,6 +55,7 @@ export default function setupTypewriter(t) {
         if (cursorPosition < HTML.length - 1) {
             setTimeout(type, tempTypeSpeed);
         } else {
+          document.getElementById('cool-things-hero-btn').style.visibility = 'visible';
           setTimeout(function() {
             document.getElementById("to-bounce").classList.add("bounce");
             document.getElementById("to-bounce").classList.remove("down-on-hover");
@@ -67,7 +68,7 @@ export default function setupTypewriter(t) {
                 window.scroll(0, 40);
               }
             } 
-          }, 1000);
+          }, 2000);
 
         }
 
