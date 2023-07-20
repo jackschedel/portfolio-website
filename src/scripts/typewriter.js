@@ -61,7 +61,11 @@ export default function setupTypewriter(t) {
           }, 150);
           setTimeout(function() {
             if(window.scrollY == 0) {
-              window.scroll(0, 40);
+              if(window.innerWidth <= 1024){
+                window.scroll(0, 100)
+              } else {
+                window.scroll(0, 40);
+              }
             } 
           }, 1000);
 
