@@ -60,7 +60,9 @@ export default function setupTypewriter(t) {
             document.getElementById("to-bounce").classList.remove("down-on-hover");
           }, 150);
           setTimeout(function() {
-                window.scroll(0, 40);
+            if(window.scrollY == 0) {
+              window.scroll(0, 40);
+            } 
           }, 1000);
 
         }
