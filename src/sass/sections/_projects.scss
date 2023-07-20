@@ -21,6 +21,12 @@
     clip-path: none;
   }
 
+  .centered-on-mobile {
+    @include respond(tab-land) {
+      text-align: center;
+    }
+  }
+
   .project-wrapper {
     padding-top: 10rem;
     margin-bottom: 15rem;
