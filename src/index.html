@@ -117,14 +117,14 @@ I like making cool things. </pre>
               <div class="role-wrapper__text load-hidden">
                 <h3 class="role-wrapper__text-title centered-on-mobile">Strategy Lead, FSGP 2023 Champions - Solar Gators</h3>
                 <div>
-                    <p class="mb-4">Created real-time telemetry data analysis tools for our team's solar-powered racecar to run live regression calculations in the racetrack pit using TypeScript. Used the analysis tools to manage and determine team race strategy during the 2023 Formula Sun Grand Prix, in which our team <b>won the overall competition.</b> Created static race physics simulations using Python, used in conjunction with an optimization solver, to optimize energy efficiency and find the ideal driving strategy for the complex 11-turn track.</p>
+                  <p class="mb-4">Created real-time telemetry data analysis tools for our team's solar-powered racecar to run live regression calculations in the racetrack pit using TypeScript. Used the analysis tools to manage and determine team race strategy during the 2023 Formula Sun Grand Prix, in which our team <b>won the overall competition.</b> Created race physics simulation using Go, used in conjunction with a Python optimization solver, to optimize energy efficiency and find the ideal driving strategy for the complex 11-turn track.</p>
                 </div>
                 <div class="centered-on-mobile">
                   <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#pit-gui-demo"
+                  href="#strategy-demo"
                   >See a demo</a>
                 </div>
               </div>
@@ -191,9 +191,9 @@ I like making cool things. </pre>
           <div class="row">
             <div class="col-lg-4 col-sm-12 order-lg-2 d-flex align-items-center justify-content-center">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title centered-on-mobile">KoalaClient - OpenAI API Client Interface</h3>
+                <h3 class="project-wrapper__text-title centered-on-mobile">KoalaClient - Typescript LLM Interface</h3>
                 <div>
-                  <p class="mb-4">Developed an advanced interface for the OpenAI API using TypeScript and Tailwind CSS to better integrate LLMs into my personal workflow. Added OpenAI Whisper speech transcription, and a searchable prompt pallet to insert frequently used prompts from a custom user-defined library. Implemented tweakable model configuration overrides, unrestricted conversation history editing, and syncing across devices via Google Drive. Deployed the project as both a website and Electron desktop app.</p>
+                  <p class="mb-4">Developed an advanced interface for the OpenAI API using TypeScript, React, and Tailwind CSS to better integrate LLMs into my personal workflow. Added OpenAI Whisper speech transcription, and a searchable prompt pallet to insert frequently used prompts from a custom user-defined library. Implemented tweakable model configuration overrides, unrestricted conversation history editing, and syncing across devices via Google Drive. Deployed the project as both a website and Electron desktop app.</p>
                 </div>
                 <div class="centered-on-mobile">
                 <a
@@ -229,19 +229,19 @@ I like making cool things. </pre>
               </div>
             </div>
           </div>
-          <div class="row" id="pit-gui-demo">
+          <div class="row" id="strategy-demo">
             <div class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center">
               <div class="project-wrapper__text load-hidden ">
-                <h3 class="project-wrapper__text-title centered-on-mobile">Solar Gators Strategy Pit GUI</h3>
+                <h3 class="project-wrapper__text-title centered-on-mobile">FSGP Simulation - Go Race Simulation + Python Solver</h3>
                 <div>
-                  <p class="mb-4">Developed an interface for performing real-time regression analysis on live telemetry data from Sunrider in only 4 days. This interface, one subpart of the Solar Gators Telemetry website, enables users to seamlessly chart various statistics over time, remove anomalous data points, perform regression analysis over user-defined time intervals, and extrapolate future estimates based on the regression data.</p>
+                  <p class="mb-4">Developed a detailed race simulation CLI program using Go that takes in a given race strategy (velocity at each point in the track) and uses physics constants of Sunrider to calculate energy consumed and time elapsed for a lap of the specified strategy. Used an optimization solver written in Python using mystic to run thousands of iterations of the CLI simulation, utilizing gradient descent to find the optimal race strategy for a given track layout and target energy consumption.</p>
                 </div>
                 <div class="centered-on-mobile">
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--against-gradient"
-                  href="https://github.com/Solar-Gators/Pit-GUI/"
+                  href="https://github.com/Solar-Gators/fsgp-simulation/"
                 >
                   Source Code
                 </a>
@@ -255,11 +255,10 @@ I like making cool things. </pre>
                     data-tilt-max="4"
                     class="thumbnail rounded js-tilt"
                   >
-                    <img
-                    alt="Strategy Page Demo"
-                    class="img-fluid"
-                    src="assets/pitguidemo.gif"
-                  />
+                  <video autoplay loop muted playsinline class="img-fluid" alt="Strategy Page Demo">
+                    <source src="assets/strategysim.webm" type="video/webm">
+                    <source src="assets/strategysim.mp4" type="video/mp4">
+                  </video>
                 </div>
               </div>
             </div>
@@ -267,9 +266,9 @@ I like making cool things. </pre>
           <div class="row">
             <div class="col-lg-4 col-sm-12 order-lg-2 d-flex align-items-center justify-content-center">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title centered-on-mobile">EndGame2 - UCI Chess Engine</h3>
+                <h3 class="project-wrapper__text-title centered-on-mobile">EndGame2 - Rust Chess Engine</h3>
                 <div>
-                  <p class="mb-4">Developed a UCI-compatible chess engine written in Rust that uses minimax tree-traversal over a variety of custom board analysis algorithms. Implemented alpha-beta pruning, position hashing, piece position mapping, and multithreading to improve search performance times. Still actively being developed and expanded upon, with plans to further expand board analysis algorithms.</p>
+                  <p class="mb-4">Developed a UCI-compatible chess engine written in Rust that uses minimax tree-traversal over a variety of custom board analysis algorithms. Implemented alpha-beta pruning, zobrist hashing, and capture-resolve quiescence searching improve search times and engine performance. Inspired by Sebastian Lague's series on chess engines, and developed as a way to learn Rust.</p>
                 </div>
                 <div class="centered-on-mobile">
                 <a
@@ -301,10 +300,78 @@ I like making cool things. </pre>
           </div>
           <div class="row">
             <div class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title centered-on-mobile">Tickr Stock Analysis - NodeJS, PHP, and Oracle SQL</h3>
+              <div class="project-wrapper__text load-hidden ">
+                <h3 class="project-wrapper__text-title centered-on-mobile">Sunrider Pit GUI - Typescript/Sequelize Race Management Tool</h3>
                 <div>
-                  <p class="mb-4">Developed an interactive platform, for visualizing and comparing multiple stocks simultaneously using NodeJS and React, with a backend supported by MySQL and a custom PHP API. Aiming to stand out in a market crowded with complex and aesthetically unpleasing tools, Tickr simplifies the stock data visualization experience with a clean, minimalistic design.</p>
+                  <p class="mb-4">Developed an interface for performing real-time regression analysis on live telemetry data from Sunrider in only 4 days. This interface, one subpart of the Solar Gators Telemetry website, enables users to seamlessly chart various statistics over time, remove anomalous data points, perform regression analysis over user-defined time intervals, and extrapolate future estimates based on the regression data.</p>
+                </div>
+                <div class="centered-on-mobile">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--against-gradient"
+                  href="https://github.com/Solar-Gators/Pit-GUI/"
+                >
+                  Source Code
+                </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    class="thumbnail rounded js-tilt"
+                  >
+                  <video autoplay loop muted playsinline class="img-fluid" alt="Strategy Page Demo">
+                    <source src="assets/pitguidemo.webm" type="video/webm">
+                    <source src="assets/pitguidemo.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-sm-12 order-lg-2 d-flex align-items-center justify-content-center">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title centered-on-mobile">RTOS Tetris - Custom RTOS for Tiva C Series</h3>
+                <div>
+                  <p class="mb-4">Developed a fully custom RTOS from the ground up, to be used with Tiva C Series processors. Programmed a fully featured Tetris game from scratch using the RTOS. By heavily optimizing the thread context switching and minimizing unnesecary redraws (on a very slow display), the resulting gameplay is snappy and lag-free, despite only running on a 16MHz processor.</p>
+                </div>
+                <div class="centered-on-mobile">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--against-gradient"
+                  href="https://github.com/jackschedel/RTOS-Tetris/"
+                >
+                  Source Code
+                </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    class="thumbnail rounded js-tilt"
+                  >
+                  <video autoplay loop muted playsinline class="img-fluid" alt="Strategy Page Demo">
+                    <source src="assets/rtos_tetris.webm" type="video/webm">
+                    <source src="assets/rtos_tetris.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title centered-on-mobile">Tickr - React/MySQL/PHP Stock Analysis Tool</h3>
+                <div>
+                  <p class="mb-4">Developed an interactive platform for visualizing and comparing multiple stocks simultaneously using React, with a backend supported by MySQL and a custom PHP API. Aiming to stand out in a market crowded with complex and aesthetically unpleasing tools, Tickr simplifies the stock data visualization experience with a clean, minimalistic design.</p>
                 </div>
                 <div class="centered-on-mobile">
                 <a
@@ -325,11 +392,9 @@ I like making cool things. </pre>
                     data-tilt-max="4"
                     class="thumbnail rounded js-tilt"
                   >
-                    <img
-                    alt="tickr Demo"
-                    class="img-fluid"
-                    src="assets/tickrdemo.gif"
-                  />
+                  <video autoplay loop muted playsinline class="img-fluid" alt="Tickr Demo">
+                    <source src="assets/tickrdemo.webm" type="video/webm">
+                    <source src="assets/tickrdemo.mp4" type="video/mp4">
                 </div>
               </div>
             </div>
