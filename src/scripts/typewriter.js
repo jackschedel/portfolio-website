@@ -34,12 +34,12 @@ export default function setupTypewriter(t) {
       if (HTML[cursorPosition] === " ") {
         tempTypeSpeed = 0;
       } else {
-        tempTypeSpeed = (Math.random() * typingSpeed) + 50;
+        tempTypeSpeed = Math.random() * typingSpeed + 50;
       }
       t.innerHTML += HTML[cursorPosition];
     }
     if (writingTag === true && HTML[cursorPosition] === ">") {
-      tempTypeSpeed = (Math.random() * typingSpeed) + 50;
+      tempTypeSpeed = Math.random() * typingSpeed + 50;
       writingTag = false;
       if (tagOpen) {
         var newSpan = document.createElement("span");
@@ -59,20 +59,6 @@ export default function setupTypewriter(t) {
         document.getElementById("to-bounce").classList.add("bounce");
         document.getElementById("to-bounce").classList.remove("down-on-hover");
       }, 150);
-      var scrollTimeout = setTimeout(function () {
-        if (window.scrollY === 0) {
-          if (window.innerWidth <= 1024) {
-            window.scroll(0, 100);
-          } else {
-            window.scroll(0, 40);
-          }
-        }
-      }, 1050);
-      window.addEventListener("scroll", function () {
-        if (window.scrollY !== 0) {
-          clearTimeout(scrollTimeout);
-        }
-      });
     }
   };
 
