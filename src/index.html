@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:title" content="Jack Schedel - Portfolio" />
     <meta property="og:image" content="assets/thumbnail.png" />
-    <meta property="og:description" content="With dual focuses on Embedded Systems and Artificial Intelligence, I am uniquely exploring the full spectrum of computer science, from the ultra-low-end hardware to the hyperabstracted realms of AI." />
-    <meta property="og:url" content="https://schedel.io/"/>
+    <meta
+      property="og:description"
+      content="With dual focuses on Embedded Systems and Artificial Intelligence, I am uniquely exploring the full spectrum of computer science, from the ultra-low-end hardware to the hyperabstracted realms of AI."
+    />
+    <meta property="og:url" content="https://schedel.io/" />
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
     <title>Jack Schedel</title>
     <link
@@ -17,10 +20,10 @@
     <link rel="stylesheet" href="styles.scss" />
     <script>
       // JavaScript to handle the click event on anchor links
-      document.addEventListener("DOMContentLoaded", function() {
+      document.addEventListener("DOMContentLoaded", function () {
         var anchorLinks = document.querySelectorAll("a[href^='#']");
-        anchorLinks.forEach(function(link) {
-          link.addEventListener("click", function(e) {
+        anchorLinks.forEach(function (link) {
+          link.addEventListener("click", function (e) {
             e.preventDefault(); // Prevent the default behavior of the anchor tag
             var targetId = this.getAttribute("href").slice(1);
             var targetElement = document.getElementById(targetId);
@@ -43,22 +46,47 @@
         <pre id="typewriter">Hi, I'm <span class="text-color-main">Jack</span>.
 I like making cool things. </pre>
         <p class="hero-cta load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero load-hidden" id="cool-things-hero-btn" p href="https://github.com/jackschedel">
+          <a
+            rel="noreferrer"
+            class="cta-btn cta-btn--hero load-hidden"
+            id="cool-things-hero-btn"
+            p
+            href="https://github.com/jackschedel"
+          >
             Cool things...
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="40" height="40" class="github-icon-svg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              width="40"
+              height="40"
+              class="github-icon-svg"
+            >
               <defs>
-                  <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" class="github-icon-stop-1" />
-                      <stop offset="100%" class="github-icon-stop-2" />
-                  </linearGradient>
+                <linearGradient
+                  id="gradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop offset="0%" class="github-icon-stop-1" />
+                  <stop offset="100%" class="github-icon-stop-2" />
+                </linearGradient>
               </defs>
-              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" fill="url(#gradient)"></path>
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                fill="url(#gradient)"
+              ></path>
             </svg>
           </a>
         </p>
       </div>
       <a rel="noreferrer" href="#about" class="to-about-section">
-        <i class="fa fa-angle-down fa-4x down-on-hover" id="to-bounce" aria-hidden="true"></i>
+        <i
+          class="fa fa-angle-down fa-4x down-on-hover"
+          id="to-bounce"
+          aria-hidden="true"
+        ></i>
       </a>
     </section>
     <section id="about">
@@ -80,14 +108,17 @@ I like making cool things. </pre>
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                With dual focuses on Embedded Systems and Artificial Intelligence, 
-                I am uniquely exploring the full spectrum of computer science, 
-                from the ultra-low-end hardware to the hyperabstracted realms of AI.
+                With dual focuses on Embedded Systems and Artificial
+                Intelligence, I am uniquely exploring the full spectrum of
+                computer science, from the ultra-low-end hardware to the
+                hyperabstracted realms of AI.
               </p>
               <p class="about-wrapper__info-text">
-                I love problem solving, algorithm development, and optimization. I love the logical puzzles
-                of coding and debugging complex problems. I find that this type of problem-solving tends to be 
-                more frequent in the extreme ends of the spectrum of abstraction.
+                I love problem solving, algorithm development, and optimization.
+                I love the logical puzzles of coding and debugging complex
+                problems. I find that this type of problem-solving tends to be
+                more frequent in the extreme ends of the spectrum of
+                abstraction.
               </p>
               <span class="d-flex mt-3">
                 <a
@@ -109,75 +140,104 @@ I like making cool things. </pre>
         <div class="role-wrapper">
           <h2 class="section-title white-color">My Roles</h2>
           <div class="row">
-            <div class="col-lg-4 col-sm-12 order-lg-2 d-flex align-items-center justify-content-center">
+            <div
+              class="col-lg-4 col-sm-12 order-lg-2 d-flex align-items-center justify-content-center"
+            >
               <div class="role-wrapper__text load-hidden">
-                <h3 class="role-wrapper__text-title centered-on-mobile">Strategy Lead, FSGP 2023 Champions - Solar Gators</h3>
+                <h3 class="role-wrapper__text-title centered-on-mobile">
+                  Strategy Lead, FSGP 2023 Champions - Solar Gators
+                </h3>
                 <div>
-                  <p class="mb-4">Created real-time telemetry data analysis tools for our team's solar-powered racecar to run live regression calculations in the racetrack pit using TypeScript. Used the analysis tools to manage and determine team race strategy during the 2023 Formula Sun Grand Prix, in which our team <b>won the overall competition.</b> Created race physics simulation using Go, used in conjunction with a Python optimization solver, to optimize energy efficiency and find the ideal driving strategy for the complex 11-turn track.</p>
+                  <p class="mb-4">
+                    Created real-time telemetry data analysis tools for our
+                    team's solar-powered racecar to run live regression
+                    calculations in the racetrack pit using TypeScript. Used the
+                    analysis tools to manage and determine team race strategy
+                    during the 2023 Formula Sun Grand Prix, in which our team
+                    <b>won the overall competition.</b> Created race physics
+                    simulation using Go, used in conjunction with a Python
+                    optimization solver, to optimize energy efficiency and find
+                    the ideal driving strategy for the complex 11-turn track.
+                  </p>
                 </div>
                 <div class="centered-on-mobile">
                   <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="#strategy-demo"
-                  >See a demo</a>
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--hero"
+                    href="#strategy-demo"
+                    >See a demo</a
+                  >
                 </div>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="role-wrapper__image load-hidden">
                 <!-- <a rel="noreferrer" href="https://ufsolargators.org/" target="_blank"> -->
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Solar Gators"
-                      class="img-fluid"
-                      src="assets/solar-gators.jpg"
-                    />
-                  </div>
+                <div
+                  data-tilt
+                  data-tilt-max="4"
+                  class="thumbnail rounded js-tilt"
+                >
+                  <img
+                    alt="Solar Gators"
+                    class="img-fluid"
+                    src="assets/solar-gators.jpg"
+                  />
+                </div>
                 <!-- </a> -->
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center">
+            <div
+              class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center"
+            >
               <div class="role-wrapper__text load-hidden">
-                <h3 class="role-wrapper__text-title centered-on-mobile">Embedded Systems Intern - Oak Ridge National Laboratory</h3>
+                <h3 class="role-wrapper__text-title centered-on-mobile">
+                  Embedded Systems Intern - Oak Ridge National Laboratory
+                </h3>
                 <div>
-                  <p class="mb-4">Wrote C and C++ code deployed to MSP430 chips on custom PCBs for a localized tracking system designed for use with containers for fissile nuclear material. Used light propagation latency from ultra-wideband communications between container devices and anchor devices to find one-dimensional distance. Implemented multilateration to determine container location using calculated distance information between the container device and multiple anchor devices with known exact placements around a target area.</p>
+                  <p class="mb-4">
+                    Wrote C and C++ code deployed to MSP430 chips on custom PCBs
+                    for a localized tracking system designed for use with
+                    containers for fissile nuclear material. Used light
+                    propagation latency from ultra-wideband communications
+                    between container devices and anchor devices to find
+                    one-dimensional distance. Implemented multilateration to
+                    determine container location using calculated distance
+                    information between the container device and multiple anchor
+                    devices with known exact placements around a target area.
+                  </p>
                 </div>
                 <div class="centered-on-mobile">
                   <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="assets/Jack_Schedel_ORNL_Poster.pdf"
-                  >Read more</a>
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--hero"
+                    href="assets/Jack_Schedel_ORNL_Poster.pdf"
+                    >Read more</a
+                  >
                 </div>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="role-wrapper__image load-hidden">
-                <!-- <a rel="noreferrer" href="assets/Jack_Schedel_ORNL_Poster.pdf" target="_blank"> -->
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Oak Ridge National Laboratory"
-                      class="img-fluid"
-                      src="assets/ornl-action.jpg"
-                    />
-                  </div>
-                <!-- </a> -->
+                <div
+                  data-tilt
+                  data-tilt-max="4"
+                  class="thumbnail rounded js-tilt"
+                >
+                  <img
+                    alt="Oak Ridge National Laboratory"
+                    class="img-fluid"
+                    src="assets/ornl-action.jpg"
+                  />
+                </div>
               </div>
             </div>
           </div>
+        </div>
       </div>
     </section>
     <section id="projects">
@@ -185,38 +245,53 @@ I like making cool things. </pre>
         <div class="project-wrapper">
           <h2 class="section-title load-hidden">My Projects</h2>
           <div class="row">
-            <div class="col-lg-4 col-sm-12 order-lg-2 d-flex align-items-center justify-content-center">
+            <div
+              class="col-lg-4 col-sm-12 order-lg-2 d-flex align-items-center justify-content-center"
+            >
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title centered-on-mobile">KoalaClient - Typescript LLM Interface</h3>
+                <h3 class="project-wrapper__text-title centered-on-mobile">
+                  KoalaClient - Typescript LLM Interface
+                </h3>
                 <div>
-                  <p class="mb-4">Developed an advanced interface for the OpenAI API using TypeScript, React, and Tailwind CSS to better integrate LLMs into my personal workflow. Added OpenAI Whisper speech transcription, and a searchable prompt pallet to insert frequently used prompts from a custom user-defined library. Implemented tweakable model configuration overrides, unrestricted conversation history editing, and syncing across devices via Google Drive. Deployed the project as both a website and Electron desktop app.</p>
+                  <p class="mb-4">
+                    Developed an advanced interface for the OpenAI API using
+                    TypeScript, React, and Tailwind CSS to better integrate LLMs
+                    into my personal workflow. Added OpenAI Whisper speech
+                    transcription, and a searchable prompt pallet to insert
+                    frequently used prompts from a custom user-defined library.
+                    Implemented tweakable model configuration overrides,
+                    unrestricted conversation history editing, and syncing
+                    across devices via Google Drive. Deployed the project as
+                    both a website and Electron desktop app.
+                  </p>
                 </div>
                 <div class="centered-on-mobile">
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--against-gradient"
-                  href="https://github.com/jackschedel/KoalaClient/"
-                >
-                  Source Code
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn gradient-contrast-color"
-                  href="https://client.koaladev.io/"
-                >See Live</a>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--against-gradient"
+                    href="https://github.com/jackschedel/KoalaClient/"
+                  >
+                    Source Code
+                  </a>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn gradient-contrast-color"
+                    href="https://client.koaladev.io/"
+                    >See Live</a
+                  >
                 </div>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
+                <div
+                  data-tilt
+                  data-tilt-max="4"
+                  class="thumbnail rounded js-tilt"
+                >
+                  <img
                     alt="KoalaClient Screenshot"
                     class="img-fluid"
                     src="assets/koalaclientss.png"
@@ -226,66 +301,99 @@ I like making cool things. </pre>
             </div>
           </div>
           <div class="row" id="strategy-demo">
-            <div class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center">
-              <div class="project-wrapper__text load-hidden ">
-                <h3 class="project-wrapper__text-title centered-on-mobile">FSGP Simulation - Go Race Simulation + Python Solver</h3>
+            <div
+              class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center"
+            >
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title centered-on-mobile">
+                  FSGP Simulation - Go Race Simulation + Python Solver
+                </h3>
                 <div>
-                  <p class="mb-4">Developed a detailed race simulation CLI program using Go that takes in a given race strategy (velocity at each point in the track) and uses physics constants of Sunrider to calculate energy consumed and time elapsed for a lap of the specified strategy. Used an optimization solver written in Python using mystic to run thousands of iterations of the CLI simulation, utilizing gradient descent to find the optimal race strategy for a given track layout and target energy consumption.</p>
+                  <p class="mb-4">
+                    Developed a detailed race simulation CLI program using Go
+                    that takes in a given race strategy (velocity at each point
+                    in the track) and uses physics constants of Sunrider to
+                    calculate energy consumed and time elapsed for a lap of the
+                    specified strategy. Used an optimization solver written in
+                    Python using mystic to run thousands of iterations of the
+                    CLI simulation, utilizing gradient descent to find the
+                    optimal race strategy for a given track layout and target
+                    energy consumption.
+                  </p>
                 </div>
                 <div class="centered-on-mobile">
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--against-gradient"
-                  href="https://github.com/Solar-Gators/fsgp-simulation/"
-                >
-                  Source Code
-                </a>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--against-gradient"
+                    href="https://github.com/Solar-Gators/fsgp-simulation/"
+                  >
+                    Source Code
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    class="thumbnail rounded js-tilt"
+                <div
+                  data-tilt
+                  data-tilt-max="4"
+                  class="thumbnail rounded js-tilt"
+                >
+                  <video
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    class="img-fluid"
+                    alt="FSGP Sim Demo"
                   >
-                  <video autoplay loop muted playsinline class="img-fluid" alt="Strategy Page Demo">
-                    <source src="assets/strategysim.webm" type="video/webm">
-                    <source src="assets/strategysim.mp4" type="video/mp4">
+                    <source src="assets/strategysim.webm" type="video/webm" />
+                    <source src="assets/strategysim.mp4" type="video/mp4" />
                   </video>
                 </div>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-4 col-sm-12 order-lg-2 d-flex align-items-center justify-content-center">
+            <div
+              class="col-lg-4 col-sm-12 order-lg-2 d-flex align-items-center justify-content-center"
+            >
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title centered-on-mobile">EndGame2 - Rust Chess Engine</h3>
+                <h3 class="project-wrapper__text-title centered-on-mobile">
+                  EndGame2 - Rust Chess Engine
+                </h3>
                 <div>
-                  <p class="mb-4">Developed a UCI-compatible chess engine written in Rust that uses minimax tree-traversal over a variety of custom board analysis algorithms. Implemented alpha-beta pruning, zobrist position hashing, and capture-resolve quiescence searching to improve search times and engine performance. Inspired by Sebastian Lague's series on chess engines, and developed as a way to learn Rust.</p>
+                  <p class="mb-4">
+                    Developed a UCI-compatible chess engine written in Rust that
+                    uses minimax tree-traversal over a variety of custom board
+                    analysis algorithms. Implemented alpha-beta pruning, zobrist
+                    position hashing, and capture-resolve quiescence searching
+                    to improve search times and engine performance. Inspired by
+                    Sebastian Lague's series on chess engines, and developed as
+                    a way to learn Rust.
+                  </p>
                 </div>
                 <div class="centered-on-mobile">
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--against-gradient"
-                  href="https://github.com/jackschedel/EndGame2/"
-                >
-                  Source Code
-                </a>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--against-gradient"
+                    href="https://github.com/jackschedel/EndGame2/"
+                  >
+                    Source Code
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
+                <div
+                  data-tilt
+                  data-tilt-max="4"
+                  class="thumbnail rounded js-tilt"
+                >
+                  <img
                     alt="EndGame2 Screenshot"
                     class="img-fluid"
                     src="assets/endgamess.png"
@@ -295,106 +403,164 @@ I like making cool things. </pre>
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center">
-              <div class="project-wrapper__text load-hidden ">
-                <h3 class="project-wrapper__text-title centered-on-mobile">Sunrider Pit GUI - Typescript/Sequelize Race Management Tool</h3>
+            <div
+              class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center"
+            >
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title centered-on-mobile">
+                  Sunrider Pit GUI - Typescript/Sequelize Race Management Tool
+                </h3>
                 <div>
-                  <p class="mb-4">Developed an interface for performing real-time regression analysis on live telemetry data from Sunrider in only 4 days. This interface, one subpart of the Solar Gators Telemetry website, enables users to seamlessly chart various statistics over time, remove anomalous data points, perform regression analysis over user-defined time intervals, and extrapolate future estimates based on the regression data.</p>
+                  <p class="mb-4">
+                    Developed an interface for performing real-time regression
+                    analysis on live telemetry data from Sunrider in only 4
+                    days. This interface, one subpart of the Solar Gators
+                    Telemetry website, enables users to seamlessly chart various
+                    statistics over time, remove anomalous data points, perform
+                    regression analysis over user-defined time intervals, and
+                    extrapolate future estimates based on the regression data.
+                  </p>
                 </div>
                 <div class="centered-on-mobile">
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--against-gradient"
-                  href="https://github.com/Solar-Gators/Pit-GUI/"
-                >
-                  Source Code
-                </a>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--against-gradient"
+                    href="https://github.com/Solar-Gators/Pit-GUI/"
+                  >
+                    Source Code
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    class="thumbnail rounded js-tilt"
+                <div
+                  data-tilt
+                  data-tilt-max="4"
+                  class="thumbnail rounded js-tilt"
+                >
+                  <video
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    class="img-fluid"
+                    alt="Pit GUI Demo"
                   >
-                  <video autoplay loop muted playsinline class="img-fluid" alt="Strategy Page Demo">
-                    <source src="assets/pitguidemo.webm" type="video/webm">
-                    <source src="assets/pitguidemo.mp4" type="video/mp4">
+                    <source src="assets/pitguidemo.webm" type="video/webm" />
+                    <source src="assets/pitguidemo.mp4" type="video/mp4" />
                   </video>
                 </div>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-4 col-sm-12 order-lg-2 d-flex align-items-center justify-content-center">
+            <div
+              class="col-lg-4 col-sm-12 order-lg-2 d-flex align-items-center justify-content-center"
+            >
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title centered-on-mobile">RTOS Tetris - Custom RTOS for Tiva C Series</h3>
+                <h3 class="project-wrapper__text-title centered-on-mobile">
+                  RTOS Tetris - Custom RTOS for Tiva C Series
+                </h3>
                 <div>
-                  <p class="mb-4">Developed a fully custom RTOS from the ground up, to be used with Tiva C Series processors. Programmed a fully featured Tetris game from scratch using the RTOS. By heavily optimizing the thread context switching and minimizing unnecessary redraws (on a very slow display), the resulting gameplay is snappy and lag-free, despite only running on a 16MHz processor.</p>
+                  <p class="mb-4">
+                    Developed a fully custom RTOS from the ground up, to be used
+                    with Tiva C Series processors. Programmed a fully featured
+                    Tetris game from scratch using the RTOS. By heavily
+                    optimizing the thread context switching and minimizing
+                    unnecessary redraws (on a very slow display), the resulting
+                    gameplay is snappy and lag-free, despite only running on a
+                    16MHz processor.
+                  </p>
                 </div>
                 <div class="centered-on-mobile">
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--against-gradient"
-                  href="https://github.com/jackschedel/RTOS-Tetris/"
-                >
-                  Source Code
-                </a>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--against-gradient"
+                    href="https://github.com/jackschedel/RTOS-Tetris/"
+                  >
+                    Source Code
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    class="thumbnail rounded js-tilt"
+                <div
+                  data-tilt
+                  data-tilt-max="4"
+                  class="thumbnail rounded js-tilt"
+                >
+                  <video
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    class="img-fluid"
+                    alt="RTOS Tetris Demo"
                   >
-                  <video autoplay loop muted playsinline class="img-fluid" alt="Strategy Page Demo">
-                    <source src="assets/rtos_tetris.webm" type="video/webm">
-                    <source src="assets/rtos_tetris.mp4" type="video/mp4">
+                    <source src="assets/rtos_tetris.webm" type="video/webm" />
+                    <source src="assets/rtos_tetris.mp4" type="video/mp4" />
                   </video>
                 </div>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center">
+            <div
+              class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center"
+            >
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title centered-on-mobile">Tickr - React/MySQL/PHP Stock Analysis Tool</h3>
+                <h3 class="project-wrapper__text-title centered-on-mobile">
+                  Tickr - React/MySQL/PHP Stock Analysis Tool
+                </h3>
                 <div>
-                  <p class="mb-4">Developed an interactive platform for visualizing and comparing multiple stocks simultaneously using React, with a backend supported by MySQL and a custom PHP API. Aiming to stand out in a market crowded with complex and aesthetically unpleasing tools, Tickr simplifies the stock data visualization experience with a clean, minimalistic design.</p>
+                  <p class="mb-4">
+                    Developed an interactive platform for visualizing and
+                    comparing multiple stocks simultaneously using React, with a
+                    backend supported by MySQL and a custom PHP API. Aiming to
+                    stand out in a market crowded with complex and aesthetically
+                    unpleasing tools, Tickr simplifies the stock data
+                    visualization experience with a clean, minimalistic design.
+                  </p>
                 </div>
                 <div class="centered-on-mobile">
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--against-gradient"
-                  href="https://github.com/jackschedel/tickr/"
-                >
-                  Source Code
-                </a>
-              </div>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--against-gradient"
+                    href="https://github.com/jackschedel/tickr/"
+                  >
+                    Source Code
+                  </a>
+                </div>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    class="thumbnail rounded js-tilt"
+                <div
+                  data-tilt
+                  data-tilt-max="4"
+                  class="thumbnail rounded js-tilt"
+                >
+                  <video
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    class="img-fluid"
+                    alt="Tickr Demo"
                   >
-                  <video autoplay loop muted playsinline class="img-fluid" alt="Tickr Demo">
-                    <source src="assets/tickrdemo.webm" type="video/webm">
-                    <source src="assets/tickrdemo.mp4" type="video/mp4">
+                    <source src="assets/tickrdemo.webm" type="video/webm" />
+                    <source src="assets/tickrdemo.mp4" type="video/mp4" />
+                  </video>
                 </div>
               </div>
             </div>
           </div>
+        </div>
       </div>
     </section>
     <section id="closing">
@@ -402,11 +568,12 @@ I like making cool things. </pre>
         <h2 class="section-title">More Coming Soon...</h2>
         <div class="closing-wrapper load-hidden">
           <a
-          rel="noreferrer"
-          target="_blank"
-          class="cta-btn cta-btn--hero"
-          href="https://github.com/jackschedel"
-          >Follow me on Github and see it first.</a>
+            rel="noreferrer"
+            target="_blank"
+            class="cta-btn cta-btn--hero"
+            href="https://github.com/jackschedel"
+            >Follow me on Github and see it first.</a
+          >
         </div>
       </div>
     </section>
@@ -429,17 +596,23 @@ I like making cool things. </pre>
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a rel="noreferrer" href="https://www.linkedin.com/in/schedel" target="_blank">
+          <a
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/schedel"
+            target="_blank"
+          >
             <i class="fa fa-linkedin fa-inverse"></i>
           </a>
-          <a rel="noreferrer" href="https://github.com/jackschedel" target="_blank">
+          <a
+            rel="noreferrer"
+            href="https://github.com/jackschedel"
+            target="_blank"
+          >
             <i class="fa fa-github fa-inverse"></i>
           </a>
         </div>
         <hr />
-        <p class="footer__text">
-          © 2023 - Jack Schedel
-        </p>
+        <p class="footer__text">© 2023 - Jack Schedel</p>
       </div>
     </footer>
     <script defer type="module" src="index.js"></script>
