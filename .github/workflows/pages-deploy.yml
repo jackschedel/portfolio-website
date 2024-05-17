@@ -27,15 +27,15 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Setup Node.js environment
-        uses: actions/setup-node@v2.1.2
+        uses: actions/setup-node@v4.0.2
 
       # Install project
       - name: Install project
-        run: npm install
+        run: pnpm install
 
       # Build project
       - name: Build project
-        run: npm run-script build
+        run: pnpm run build
 
       # Push to Github Pages
       - name: Github Pages
