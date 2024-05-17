@@ -25,12 +25,17 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 21
+
       # Runs a single command using the runners shell
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v4.0.2
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
 
       # Install project
-      - name: Install project
+      - name: Install dependencies
         run: pnpm install
 
       # Build project
