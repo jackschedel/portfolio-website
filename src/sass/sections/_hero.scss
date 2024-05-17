@@ -16,7 +16,6 @@
   z-index: -1;
   overflow: hidden;
 
-
   // Set position sticky so the jumbotron stays fixed while you scroll.
   //position: sticky;
 
@@ -60,7 +59,8 @@
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -73,8 +73,7 @@
   animation: bounce 1s infinite ease-in-out;
 }
 
-
-#typewriter{
+#typewriter {
   font-size: 5.6rem;
   font-weight: 700;
   align-items: left;
@@ -89,7 +88,7 @@
   bottom: 0;
   right: 0;
 
-  &:after{
+  &:after {
     content: "|";
     animation: blink 500ms linear infinite alternate;
   }
@@ -105,24 +104,36 @@
   }
 }
 
-.var-highlight{
-  color: #C0AD60;
+.var-highlight {
+  color: #c0ad60;
 }
-.string-highlight{
+.string-highlight {
   color: rgba(253, 149, 90, 0.8);
 }
 
-@-webkit-keyframes blink{
-  0%{opacity: 0;}
-  100%{opacity: 1;}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-@-moz-keyframes blink{
-  0%{opacity: 0;}
-  100%{opacity: 1;}
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-@keyframes blink{
-  0%{opacity: 0;}
-  100%{opacity: 1;}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

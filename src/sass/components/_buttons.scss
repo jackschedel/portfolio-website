@@ -22,23 +22,23 @@
 }
 
 .github-icon-stop-1 {
-  stop-color: #8091D6;
+  stop-color: #8091d6;
   stop-opacity: 1;
   transition-duration: 0.2s;
 }
 
 .github-icon-stop-2 {
-  stop-color: #70B4D8;
+  stop-color: #70b4d8;
   stop-opacity: 1;
   transition-duration: 0.2s;
 }
 
-.cta-btn--hero:hover stop { 
+.cta-btn--hero:hover stop {
   stop-color: $dark-grey;
 }
 
 /* Hero Style */
-.cta-btn--hero { 
+.cta-btn--hero {
   margin-left: 0;
   margin-right: auto;
 
